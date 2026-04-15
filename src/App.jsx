@@ -50,44 +50,46 @@
 // export  default App;
 
 
-import Musicprops from "./components/Musicprops";
-import React, {useState} from "react";
-import Navbar from "./components/Navbar";
+// import Musicprops from "./components/Musicprops";
+// import React, {useState} from "react";
+// import Navbar from "./components/Navbar";
 
-function App(){
+// function App(){
 
-  const data= [
-    {image: "https://images.unsplash.com/photo-1774287469369-ee230c07ca28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D", name: "Challenger", artist:"Tow", added:false},
-    {image: "https://images.unsplash.com/photo-1773858427856-b725c1984770?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D", name: "Xyron", artist:"Urab", added:false},
-    {image: "https://images.unsplash.com/photo-1725034836574-ff721dc52467?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D", name: "kite", artist:"koly", added:false},
-    {image: "https://images.unsplash.com/photo-1774455303806-753ccd0a19f4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D", name: "vol", artist:"koly", added:false}
+//   const data= [
+//     {image: "https://images.unsplash.com/photo-1774287469369-ee230c07ca28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D", name: "Challenger", artist:"Tow", added:false},
+//     {image: "https://images.unsplash.com/photo-1773858427856-b725c1984770?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D", name: "Xyron", artist:"Urab", added:false},
+//     {image: "https://images.unsplash.com/photo-1725034836574-ff721dc52467?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D", name: "kite", artist:"koly", added:false},
+//     {image: "https://images.unsplash.com/photo-1774455303806-753ccd0a19f4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D", name: "vol", artist:"koly", added:false}
 
 
-  ];
+//   ];
 
-  const [songData , setSongData]= useState(data);
-  const handleClick = (index)=>{
-    setSongData((prev)=>{
-      return prev.map((item,  itemindex)=>{
-        if(itemindex  === index)return {...item, added: !item.added};
-        return item;
-      })
-    })
-  }
+//   const [songData , setSongData]= useState(data);
+//   const handleClick = (index)=>{
+//     setSongData((prev)=>{
+//       return prev.map((item,  itemindex)=>{
+//         if(itemindex  === index)return {...item, added: !item.added};
+//         return item;
+//       })
+//     })
+//   }
 
-  return (
-    <>
-    <div className="w-full h-screen bg-zinc-300  ">
-      <Navbar data={songData}/>
-      <div className="px-20 flex gap-10  mt-10 flex-wrap">
-        {songData.map((obj,index)=>(
-          <Musicprops data={obj} handleClick={handleClick}
-          index={index} key={index}/>
-        ))}
-      </div>
-    </div>
-    </>
-) 
-}
+//   return (
+//     <>
+//     <div className="w-full h-screen bg-zinc-300  ">
+//       <Navbar data={songData}/>
+//       <div className="px-20 flex gap-10  mt-10 flex-wrap">
+//         {songData.map((obj,index)=>(
+//           <Musicprops data={obj} handleClick={handleClick}
+//           index={index} key={index}/>
+//         ))}
+//       </div>
+//     </div>
+//     </>
+// ) 
+// }
 
-export default App;
+// export default App;
+
+import React {useRef}
