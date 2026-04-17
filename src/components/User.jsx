@@ -12,7 +12,7 @@ function User() {
             <Link className="p-3 bg-red-200 text-2xl mb-3 hover:bg-red-300" to="/user/alex">
             alex
             </Link>
-            <Link className="p-3 bg-red-200 text-2xl mb-3 hover:bg-red-300" to="/user/notra">
+            <Link className="p-3 bg-blue-200 text-2xl mb-3 hover:bg-red-300" to="/user/notra">
             notra
             </Link>
 
